@@ -5,6 +5,7 @@ body {
 }
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 img {
   width: 50%;
@@ -29,4 +30,8 @@ section>header {
 #nav-bar {
   height: 100vh;
   background-color: #eee;
+  text-align: center;
+}
+#main-doc {
+  padding: 2vh 0;
 }
