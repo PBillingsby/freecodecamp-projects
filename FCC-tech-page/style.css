@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  width: 50%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  padding: 20px 0;
+  font-size: x-large;
+}
+header, h1 {
+  text-align: center;
+}
+section {
+  max-width: 65vw;
+  margin: 0 auto;
+}
+section>header {
+  font-size: x-large;
+}
+#nav-bar {
+  height: 100vh;
+  background-color: #eee;
+}
