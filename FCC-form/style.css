@@ -1,0 +1,14 @@
+header img{
+  width: 25%;
+}
+body {
+  background-image: url(https://images.unsplash.com/photo-1591322674370-0f7d1aa91a1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+  background-size: cover;
+}
+.container {
+  padding: 20px;
+  width: 80vw;
+  background-color: #eee;
+  margin: 20px auto;
+  text-align: center;
+}
