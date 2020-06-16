@@ -50,9 +50,10 @@ countUpAndPrint(1)
 Your new number is 2
       </code></pre>
     </section>
+    
     <section class="main-section" id="variable_declarations">
       <header>Variable Declarations</header>
-      <p>ECMAScript 6 introduced two new variable declaration syntax, <em>const</em> and <em>let</em> variable declarations </p>
+      <p>ES6 introduced two new variable declaration syntax, <em>const</em> and <em>let</em> variable declarations.</p>
       <h3>ES5</h3>
       <h4>var</h4>
       <pre><code>var myVar = "Hello World";</code></pre>
@@ -61,31 +62,81 @@ Your new number is 2
       }</code></pre>
       <h3>ES6</h3>
       <h4>const</h4>
-      <p>Unlike let and var, const cannot be reassigned, or declared without a value. Doing so will cause errors, either for assigning to a constant (Uncaught TypeError), or trying to initialize a constant with no value (Uncaught SyntaxError).</p>
+      <p><em>const</em> was introduced to create constant variables.</p>
+      <p>Unlike <em>let</em> and <em>var</em>, <em>const</em> cannot be reassigned, or declared without a value. Doing so will cause errors, either for assigning to a constant (Uncaught TypeError), or trying to initialize a constant with no value (Uncaught SyntaxError).</p>
       <pre><code>const myVar = "Hello World";</code></pre>
       <p>Though restricted upon declaration of a constant, a constant is immutable.</p>
       <pre><code>const person = {
           name: "Dave"
       }
-person.name = "David"
+person.name = "David";
 "David"</code></pre>
 
       <h4>let</h4></p>
+      <p><em>let</em> is a block-scoped variable. It is used for assigning variables with values that can be changed. </p>
       <pre><code>let myVar = "Hello World";
 console.log(myVar);
-myVar = "Hi World"
+myVar = "Hi World";
 console.log(myVar);
 
 Hello World
 Hi World
       </code></pre>
+      <p>For a basic loop with conditionals, we create a for loop we declare a variable, <em>i</em>, with the value of 1 as the counter. Through each condition, if <em>i</em> is less than, or equal to 5, <em>i</em> will increment and log to the console until condition is met.</p>
+      <pre><code>for (let i = 1; i <= 5; ++i) {
+        console.log(i);
+    }
+
+1
+2
+3
+4
+5</code></pre>
+    <p>If <em>i</em> was declared with a <em>const</em> in the loop, the first value of <em>i</em> would be logged, followed by an TypeError upon incrementing <em>i</em>.</p>
     </section>
     <section class="main-section" id="template_literals">
       <header>Template Literals</header>
+      <p>ES6 introduced template literals for a safer and cleaner way to work with string.</p>
+      <p>For string literals ES5 uses single and double quotes ('content', "content"), for template literals ES6 uses backticks (`content`)</p>
+      <h3>ES5</h3>
+      <pre><code>const newCar = function(carBrand, carType) {
+        console.log("I just bought a brand new"
+         + carBrand + " and it is a " + carType);
+      }
+newCar("Toyota", "4X4");
+
+I just bought a brand newToyota and it is a 4X4
+      </code></pre>
+      <h3>ES6</h3>
+      <p>Template literals use <em>${}</em> syntax to insert variables in between curly braces which can then be used.</p>
+      <pre><code>const newCar = function(carBrand, carType) {
+          console.log(`I just bought a brand new
+           ${carBrand} and it is a ${carType});
+      }
+newCar("Toyota", "4X4");
+
+I just bought a brand newToyota and it is a 4X4
+      </code></pre>
+      <p>More on template literals <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" alt="mozilla docs" target="_blank">here</a></p>
     </section>
     <section class="main-section" id="destructuring_assignment">
       <header>Destructuring Assignment</header>
+      <p><em>ES6</em> introduces destructuring assignment, which allows us to get access to array values, and properties from objects, and assign them to variables.</p>
+      <pre><code>const arr = [1, 2, 3];
+
+const [a, b, c] = arr;
+const [one, two] = arr;
+
+console.log(`ABC ARRAY = a:${a}, b:${b}, c:${c}. ${[a, b, c]}`);
+console.log(`1 AND 2 ARRAY = 1:${one}, 2:${two}. ${[one, two]}`);
+
+ABC ARRAY = a:1, b:2, c:3. 1,2,3
+1 AND 2 ARRAY = 1:1, 2:2. 1,2
+      </code></pre>
+      <p>Destructuring assignment will use an array of variables and assign them to the first values of the array or object.</p>
+      <p>More information on destructuring assignment <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank">here</a></p>
     </section>
+    <p class="center"><a href="#">top</a></p>
   </main>
 </body>
 </html>

@@ -9,17 +9,19 @@ ul {
   padding-left: 0;
 }
 img {
-  width: 50%;
+  width: 7em;
+  position: sticky;
+  margin-left: 25%;
 }
 a, header {
   text-decoration: none;
 }
 li {
   padding: 20px 0;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 header {
-  font-size: 1.5em;
+  font-size: 1.75rem;
   color: rgb(43, 43, 43);
   margin-top: 10px;
 }
@@ -42,13 +44,15 @@ pre code {
 #nav-bar {
   height: 100%;
   background-color: #eee;
-  text-align: center;
-}
-.nav-fixed {
-  position: fixed;
-  left: 15px;
-  width: 150px;
+  max-width: 300px;
+  display: flex;
+  overflow: hidden;
+  padding: 1.5em;
 }
 #main-doc {
   padding: 2vh 0;
+}
+
+.center {
+  text-align: center;
 }
