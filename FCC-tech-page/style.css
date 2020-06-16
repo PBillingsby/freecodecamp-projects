@@ -37,12 +37,17 @@ pre code {
   display: block;
   padding: 5px;
   border: 1px solid #999;
-  width: 35vw;
+  width: 45vw;
 }
 #nav-bar {
   height: 100%;
   background-color: #eee;
   text-align: center;
+}
+.nav-fixed {
+  position: fixed;
+  left: 15px;
+  width: 150px;
 }
 #main-doc {
   padding: 2vh 0;
