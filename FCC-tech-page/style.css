@@ -2,7 +2,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  font-family: Sans-Serif;
+  font-family: Helvetica;
 }
 ul {
   list-style-type: none;
@@ -20,6 +20,7 @@ li {
 }
 header, h1 {
   text-align: center;
+  color: red;
 }
 section {
   max-width: 60vw;
@@ -32,11 +33,12 @@ pre code {
   font-family: monospace;
   background-color: #eee;
   display: block;
+  padding: 5px;
   border: 1px solid #999;
   width: 35vw;
 }
 #nav-bar {
-  height: 100vh;
+  height: 100%;
   background-color: #eee;
   text-align: center;
 }

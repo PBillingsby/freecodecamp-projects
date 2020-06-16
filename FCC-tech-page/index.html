@@ -29,17 +29,33 @@
     <section class="main-section" id="arrow_functions">
       <header>Arrow Functions</header>
       <p>Arrow functions are anonymous functions introduced with ECMAScript 6. They are a concise way to write function expressions.</p>
-      <p>Arrow functions are mini functions that can be used as one liners, makes it a shorter version of ES5 function expressions</p>
+      <p>Arrow functions are mini functions that can be used as one liners, which makes it a shorter version of ES5 function expressions.</p>
       <h4>ES5</h4>
-      <pre><code>let countUp = function(num) {
-        return ++num
-      }
+      <pre><code>const countUp = function(num) {
+        return ++num;
+    }
       </code></pre>
       <h4>ES6</h4>
-      <pre><code>let countUp = (num) => ++num</code></pre>
+      <pre><code>var countUp = num => ++num;</code></pre>
+      <p>First we declare the function name, countUp. Followed by the parameters passing to the function (parentheses are needed in functions with more than one parameter), followed by the expression.</p>
+      <p>Functions with more than one expression need curly braces.</p>
+      <pre><code>const countUpAndPrint = num => {
+        ++num;
+        console.log("Your new number is " + num);
+      }
+
+countUpAndPrint(1)
+Your new number is 2
+      </code></pre>
     </section>
     <section class="main-section" id="variable_declarations">
       <header>Variable Declarations</header>
+      <p>With ECMAScript 6, variable declarations </p>
+      <h4>ES5</h4>
+      <pre><code>var myVar = "Hello World";
+      </code></pre>
+      <h4>ES6</h4>
+      <pre><code>let countUp = (num) => ++num</code></pre>
     </section>
     <section class="main-section" id="template_literals">
       <header>Template Literals</header>
