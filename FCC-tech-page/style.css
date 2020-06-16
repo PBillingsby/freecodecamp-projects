@@ -18,13 +18,15 @@ li {
   padding: 20px 0;
   font-size: 1.25em;
 }
-header, h1 {
-  text-align: center;
-  color: red;
+header {
+  font-size: 1.5em;
+  color: rgb(43, 43, 43);
+  margin-top: 10px;
 }
 section {
   max-width: 60vw;
-  margin: 0 auto;
+  margin: 25px auto;
+  border-bottom: 1px solid #eee;
 }
 section>header {
   font-size: x-large;

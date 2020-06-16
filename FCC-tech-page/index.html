@@ -10,7 +10,7 @@
 <body>
   <div id="nav-bar">
     <img src="https://pluspng.com/img-png/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png" alt="logo">
-    <header><h2>JavaScript ES6 Features</h2></header>
+    <header>ES6 Features</header>
     <ul>
       <li><a href="#intro" class="nav-link">Introduction</a></li>
       <li><a href="#arrow_functions" class="nav-link">Arrow Functions</a></li>
@@ -50,11 +50,17 @@ Your new number is 2
     </section>
     <section class="main-section" id="variable_declarations">
       <header>Variable Declarations</header>
-      <p>With ECMAScript 6, variable declarations </p>
+      <p>ECMAScript 6 introduced two new variable declaration syntax, <em>const</em> and <em>let</em> variable declarations </p>
       <h4>ES5</h4>
-      <pre><code>var myVar = "Hello World";
-      </code></pre>
+      <h5>var</h5>
+      <pre><code>var myVar = "Hello World";</code></pre>
       <h4>ES6</h4>
+      <h5>const</h5>
+      <p>Unlike let and var, const cannot be reassigned, or declared without a value. Doing so will cause errors, either for assigning to a constant (Uncaught TypeError), or trying to initialize a constant with no value (Uncaught SyntaxError).</p>
+      <pre><code>const myVar = "Hello World";</code></pre>
+      <p>Though restricted upon declaration of a constant, a constant is immutable.</p>
+      <pre><code>const person = {
+        }</code></pre>
       <pre><code>let countUp = (num) => ++num</code></pre>
     </section>
     <section class="main-section" id="template_literals">
