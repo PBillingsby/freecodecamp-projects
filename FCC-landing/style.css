@@ -1,18 +1,29 @@
 #header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 #header-img {
-  width: 75px;
+  width: 7vw;
+  height: auto;
   margin: 0 25px;
+}
+#about {
+  max-width: 50vw;
+}
+#packages {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
 }
 .container {
   width: 85vw;
+  margin-top: 5vh;
+  background-color: #eee;
+}
+img:hover {
+  opacity: .75;
 }
 span {
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c0/Moon_0063_Nevit.svg');
@@ -28,5 +39,7 @@ nav {
 .container {
   width: 85%;
   height: auto;
-  margin: 75px auto;
+  margin: 15px auto;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
 }

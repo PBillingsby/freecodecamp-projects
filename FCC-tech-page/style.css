@@ -4,7 +4,7 @@ body {
   grid-template-columns: 1fr 4fr;
   font-family: Helvetica;
 }
-ul {
+.nav-links {
   list-style-type: none;
   padding-left: 0;
 }
