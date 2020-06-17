@@ -41,8 +41,9 @@ span {
   margin: 5vh 15vw;
 }
 .container {
+  
   width: 85vw;
-  margin-top: 15vh !important;
+  margin-top: 20vh !important;
   background-color: #eee;
   border: 1px solid rgba(68, 68, 68, .5);
   border-radius: 5px;
@@ -51,10 +52,6 @@ span {
 img:hover {
   opacity: .75;
 }
-span {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c0/Moon_0063_Nevit.svg');
-  padding-left: 125px;
-}
 li {
   margin: 0 45px;
 }
@@ -62,8 +59,9 @@ nav {
   margin: 0 auto;
   padding-top: 30px;
 }
-@media(max-width: 1440px) {
-  .container {
-    margin-top: 10vh;
+@media(max-width: 1200px) {
+  #header {
+    float: none;
+    display: inline-flex;
   }
 }
