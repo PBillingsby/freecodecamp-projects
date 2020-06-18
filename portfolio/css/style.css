@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap');
 body {
   font-family: Lato ;
-  background-color: #eee !important;
 }
 h1 {
   font-size: 8em !important;
@@ -18,19 +17,27 @@ li {
   margin-top: 10vh;
   height: auto;
 }
-
+.pt-3 {
+  padding-top: 50vh !important;
+}
 #welcome-section {
   font-family: Raleway;
   background-color: rgb(200, 255, 255);
-  background-size: 100%;
-  background-position: right;
-  padding-right: 10px;
   height: 100vh;
 }
 #navbar {
   text-align: center;
-  background-color:#eee;
+  background-color:#ffffff;
   position: fixed;
   top: 0;
   width: 100vw;
+}
+#projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+.card > img {
+  width: 15vw;
+
 }
