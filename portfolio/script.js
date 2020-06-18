@@ -10,7 +10,6 @@ function displayPage(event) {
   let contact = document.getElementById("#contact");
   if (event.target.innerText === "work") {
     work.style.visibility = "";
-    contact.style.visibility = "hidden";
   }
   else if (event.target.innerText === "contact") {
     console.log("contact")
